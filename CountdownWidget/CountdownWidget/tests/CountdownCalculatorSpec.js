@@ -67,10 +67,15 @@ define(["require", "exports", "moment-timezone", "../scripts/countdownCalculator
         });
         it("use case 3 : diff from 11-10-2016 11:38 Europe/Paris to 30-10-2016 23:59 Europe/Paris With skip no-working days to be 19 days", function () {
             var DayOfWeeks = ["monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday"];
-            var calculator = new CountdownCalculator.CountdownCalculator(moment.tz("11-10-2016 11:38", "DD-MM-YYYY H:m", "Europe/Paris"), moment.tz("30-10-2016 23:59", "DD-MM-YYYY H:m", "Europe/Paris"), DayOfWeeks);
-            var countdownResult = calculator.getDifference();
-            expect(countdownResult.value).toBe(19);
-            expect(CountdownCalculator.Unit[countdownResult.unit]).toBe("Days");
+            var calculatorWithSkip = new CountdownCalculator.CountdownCalculator(moment.tz("11-10-2016 11:38", "DD-MM-YYYY H:m", "Europe/Paris"), moment.tz("30-10-2016 23:59", "DD-MM-YYYY H:m", "Europe/Paris"), DayOfWeeks);
+            var countdownResultWithSkip = calculatorWithSkip.getDifference();
+            expect(countdownResultWithSkip.value).toBe(19);
+        });
+        it("use case 4 : diff from 11-10-2016 11:38 Europe/Paris to 30-10-2016 23:59 Europe/Paris With No skip no-working days to be 19 days", function () {
+            var DayOfWeeks = ["monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday"];
+            var calculatorNoSkip = new CountdownCalculator.CountdownCalculator(moment.tz("11-10-2016 11:38", "DD-MM-YYYY H:m", "Europe/Paris"), moment.tz("30-10-2016 23:59", "DD-MM-YYYY H:m", "Europe/Paris"));
+            var countdownResultNoSkip = calculatorNoSkip.getDifference();
+            expect(countdownResultNoSkip.value).toBe(19);
         });
     });
     describe("diff method ", function () {

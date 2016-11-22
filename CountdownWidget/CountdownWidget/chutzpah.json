@@ -3,6 +3,7 @@
   "TestFileTimeout": 60000,
   "TestHarnessReferenceMode": "AMD",
   "TypeScriptModuleKind": "AMD",
+  "CodeCoverageExecutionMode": "Always",
   "Compile": {
     "Mode": "External",
     "Extensions": [ ".ts" ],

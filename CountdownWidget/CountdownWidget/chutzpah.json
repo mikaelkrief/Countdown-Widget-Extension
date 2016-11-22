@@ -6,7 +6,8 @@
   "Compile": {
     "Mode": "External",
     "Extensions": [ ".ts" ],
-    "ExtensionsWithNoOutput": [ ".d.ts" ]
+    "ExtensionsWithNoOutput": [ ".d.ts" ],
+    "UseSourceMaps": true
   },
   "References": [
     { "Path": "./scripts/lib/moment.js" },

@@ -23,8 +23,7 @@
 
   ],
   "CodeCoverageExecutionMode": "Always",
-  "CodeCoverageIncludes": [ "*/tests/*.ts" ],
-  "CodeCoverageExcludes": [ "*.d.ts", "*/scripts/*/*.ts", "*/tests/TestSpec.ts" ],
+  "CodeCoverageIncludes": [ "./scripts/countdownCalculator.ts", "./scripts/countdownWidget.ts" ],
   "Transforms": [
 
     {

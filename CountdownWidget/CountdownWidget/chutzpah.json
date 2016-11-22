@@ -24,7 +24,7 @@
 
   ],
   "CodeCoverageExecutionMode": "Always",
-  "CodeCoverageIncludes": [ "./scripts/countdownCalculator.ts" ],
+  "CodeCoverageIncludes": [ "*/scripts/countdownCalculator.js", "*/scripts/countdownWidget.js"],
   "CodeCoverageExcludes": [ "*/moment-timezone.js", "*/moment.js" ],
   "CodeCoverageTimeout": 500000,
   "Transforms": [

@@ -4,6 +4,7 @@
   "TestHarnessReferenceMode": "AMD",
   "TypeScriptModuleKind": "AMD",
   "CodeCoverageExecutionMode": "Always",
+  "CodeCoverageTimeout": 60000,
   "Compile": {
     "Mode": "External",
     "Extensions": [ ".ts" ],

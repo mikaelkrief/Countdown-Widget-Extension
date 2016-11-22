@@ -20,5 +20,20 @@
       "Includes": [ "*/tests/*.ts" ],
       "Excludes": [ "*.d.ts", "*/scripts/*/*.ts", "*/tests/TestSpec.ts" ]
     }
+
+  ],
+  "Transforms":
+  [
+
+    {
+      "Name": "jacoco",
+      "Path": "jacoco.xml"
+
+    }
   ]
+
+
+
+
+
 }

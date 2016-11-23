@@ -1,0 +1,8 @@
+
+chutzpah generate lcov file
+
+lcov to cobertura 
+https://github.com/eriwen/lcov-to-cobertura-xml
+
+report generator with ReportGenerator
+https://github.com/danielpalme/ReportGenerator/tree/master/ReportGenerator

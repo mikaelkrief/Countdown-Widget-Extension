@@ -33,6 +33,11 @@
       "Name": "jacoco",
       "Path": "summary.xml"
 
+    },
+      {
+      "Name": "lcov",
+      "Path": "lcov.dat"
+
     }
   ]
 

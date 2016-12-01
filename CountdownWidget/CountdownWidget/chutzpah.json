@@ -25,10 +25,18 @@
   "CodeCoverageExecutionMode": "Always",
   "CodeCoverageIncludes": [ "*/scripts/countdownCalculator.js", "*/scripts/countdownWidget.js"],
   "CodeCoverageExcludes": [ "*/moment-timezone.js", "*/moment.js" ],
+  "CodeCoverageTimeout": 500000,
   "Transforms": [
+
     {
+      "Name": "jacoco",
+      "Path": "summary.xml"
+
+    },
+      {
       "Name": "lcov",
       "Path": "lcov.dat"
+
     }
   ]
 }

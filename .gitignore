@@ -13,3 +13,4 @@
 /.vs
 CountdownWidget/CountdownWidget/src/*.js
 /CountdownWidget/CountdownWidget/tests/CountdownCalculatorSpec.js
+/CountdownWidget/CountdownWidget/reportTests

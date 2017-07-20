@@ -40,7 +40,7 @@ describe("countdown ", () => {
 
 		const countdownResult = calculator.getDifference();
 
-		expect(countdownResult.value).toBe(29);
+		expect(countdownResult.value).toBe(30);
 		expect(countdownResult.unit).toBe(CountdownResult.Unit.Days);
 	});
 	it("from 1-12-2015 to 2-12-2015 is 1 day", () => {

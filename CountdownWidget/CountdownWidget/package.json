@@ -16,9 +16,11 @@
     "webpack": "webpack --progress --colors --config webpack.config.js --output-path ./dist -p",
     "compiletests": "tsc ./tests/CountdownCalculatorSpec.ts",
     "runtests": "jasmine-node --test-dir ./tests --verbose --junitreport --output ./reportTests/",
-    "pretest": "rimraf ./reportTests && rimraf ./coverage",
     "runcovertests": "istanbul cover --hook-run-in-context --report cobertura --report html node_modules/jasmine-node/bin/jasmine-node --test-dir ./tests --verbose --junitreport --output ./reportTests/",
-    "test": "npm run compiletests && npm run runtests && npm run runcovertests"
+    "inlinesource": "gulp inlinesource",
+    "pretest": "rimraf ./reportTests && rimraf ./coverage",
+    "test": "npm run compiletests && npm run runtests && npm run runcovertests",
+    "posttest": "npm run inlinesource"
   },
   "author": "ALM Rangers",
   "license": "MIT",
@@ -32,7 +34,9 @@
     "typescript": "2.3.2",
     "webpack": "^2.5.1",
     "jasmine-node": "^1.14.5",
-    "istanbul": "^0.4.5"
+    "istanbul": "^0.4.5",
+    "gulp": "^3.9.1",
+    "gulp-inline-source": "^3.1.0"
   },
   "dependencies": {
     "@types/jquery": "^2.0.34",

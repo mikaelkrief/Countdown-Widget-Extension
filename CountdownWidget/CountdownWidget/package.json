@@ -12,7 +12,7 @@
     "gallery-publish": "npm run build && tfx extension publish --rev-version --token mi244imrtmzyhxtiych23wf2e6titzfffbdhm25my5p3bob6el4q",
     "lint": "tslint -c tslint.json 'src/*.ts'",
     "package": "tfx extension create  --rev-version",
-    "postbuild": "npm run package",
+    "postbuilddemo": "npm run package",
     "webpack": "webpack --progress --colors --config webpack.config.js --output-path ./dist -p"
   },
   "author": "ALM Rangers",
